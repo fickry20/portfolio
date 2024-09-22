@@ -8,6 +8,7 @@
 
     <!-- =====BOX ICONS===== -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <title>Portfolio</title>
   </head>
@@ -44,7 +45,7 @@
             Web Designer
           </h1>
 
-          <a href="#" class="button">Contact</a>
+          <a href="https://docs.google.com/document/d/1D4tIqtzl7Ay4990L8WGd590J6H6bLjrAVEgWJoCO7PA/edit?usp=sharing" class="button">Download CV</a>
         </div>
 
         <div class="home__social">
@@ -88,7 +89,8 @@
           <div>
             <h2 class="about__subtitle">I'am Fickry</h2>
             <p class="about__text">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.
+              I am Mohammad Fickry Pratama, a 23 year old male residing in Bogor. I have experience working in several previous positions. I am a quick learner and can work well under pressure. Currently, I am pursuing a degree in Computer
+              Engineering.
             </p>
           </div>
         </div>
@@ -99,37 +101,45 @@
         <h2 class="section-title">Skills</h2>
 
         <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">HTML5</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">CSS3</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">JAVASCRIPT</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">UX/UI</span>
-              </div>
-            </div>
+          <div class="skills__photo">
+            <img src="assets/img/work1.jpg" alt="work1" class="skills__img" />
           </div>
-
           <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+            <h2 class="skills__subtitle">Professional Skills</h2>
+            <p class="skills__text">I have expertise in HTML5, CSS3, and JavaScript, with experience in designing intuitive and functional user interfaces (UI) and user experiences (UX).</p>
+
+            <div class="skills__list">
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-html5 skills__icon"></i>
+                  <span class="skills__name">HTML5</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-css3 skills__icon"></i>
+                  <span class="skills__name">CSS3</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-javascript skills__icon"></i>
+                  <span class="skills__name">JavaScript</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxs-paint skills__icon"></i>
+                  <span class="skills__name">UX/UI</span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="fab fa-php skills__icon"></i>
+                  <span class="skills__name">PHP</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -140,27 +150,28 @@
 
         <div class="sertificate__container bd-grid">
           <a href="" class="sertificate__img" title="Sertificate 1">
-            <img src="assets/img/work1.jpg" alt="Sertificate 1" />
+            <img src="assets/img/Sertificate_1.jpg" alt="Sertificate 1" />
           </a>
           <a href="" class="sertificate__img" title="Sertificate 2">
-            <img src="assets/img/work2.jpg" alt="Sertificate 2" />
+            <img src="assets/img/Sertificate_2.jpg" alt="Sertificate 2" />
           </a>
           <a href="" class="sertificate__img" title="Sertificate 3">
-            <img src="assets/img/work3.jpg" alt="Sertificate 3" />
+            <img src="assets/img/Sertificate_3.jpg" alt="Sertificate 3" />
           </a>
           <a href="" class="sertificate__img" title="Sertificate 4">
-            <img src="assets/img/work4.jpg" alt="Sertificate 4" />
+            <img src="assets/img/Sertificate_4.jpg" alt="Sertificate 4" />
           </a>
           <a href="" class="sertificate__img" title="Sertificate 5">
-            <img src="assets/img/work5.jpg" alt="Sertificate 5" />
+            <img src="assets/img/Sertificate_5.jpg" alt="Sertificate 5" />
           </a>
           <a href="" class="sertificate__img" title="Sertificate 6">
-            <img src="assets/img/work6.jpg" alt="Sertificate 6" />
+            <img src="assets/img/Sertificate_6.jpg" alt="Sertificate 6" />
           </a>
         </div>
       </section>
 
       <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
       <form action="contact-form-backend/send_email.php" method="POST" class="contact__form">
         <input type="text" name="name" placeholder="Name" class="contact__input" required />
         <input type="email" name="email" placeholder="Email" class="contact__input" required />

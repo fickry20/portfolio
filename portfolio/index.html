@@ -9,7 +9,13 @@
     <!-- =====BOX ICONS===== -->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("service_24wr10j"); // Ganti dengan User ID Anda
+        })();
+    </script>
+    
     <title>Portfolio</title>
   </head>
   <body>
@@ -172,13 +178,31 @@
 
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
-      <form action="contact-form-backend/send_email.php" method="POST" class="contact__form">
-        <input type="text" name="name" placeholder="Name" class="contact__input" required />
-        <input type="email" name="email" placeholder="Email" class="contact__input" required />
-        <textarea name="message" cols="0" rows="10" class="contact__input" required></textarea>
-        <input type="submit" value="Submit" class="contact__button button" />
-      </form>
-    </main>
+        <form id="contact-form" class="contact__form">
+            <input type="text" name="name" placeholder="Name" class="contact__input" required />
+            <input type="email" name="email" placeholder="Email" class="contact__input" required />
+            <textarea name="message" cols="0" rows="10" class="contact__input" required></textarea>
+            <input type="submit" value="Submit" class="contact__button button" />
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah pengiriman form secara default
+            
+            const serviceID = 'service_24wr10j'; // Ganti dengan Service ID Anda
+            const templateID = 'template_u1kke9c'; // Ganti dengan Template ID Anda
+    
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert('Message sent successfully!');
+                    this.reset(); // Reset form setelah pengiriman
+                }, (err) => {
+                    alert(JSON.stringify(err));
+                });
+        });
+    </script>
+    
 
     <!--===== FOOTER =====-->
     <footer class="footer">

@@ -473,3 +473,39 @@ img {
     width: 450px;
   }
 }
+
+/* Container untuk informasi detail */
+.about__info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Item individu dalam grid */
+.about__info-item {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Label judul (kiri) */
+.about__info-title {
+    font-weight: var(--font-semi-bold);
+    color: var(--first-color); /* Sesuaikan dengan warna utama tema Anda */
+    width: 100px;
+    flex-shrink: 0;
+}
+
+/* Isi data (kanan) */
+.about__info-value {
+    color: var(--text-color);
+}
+
+/* Responsif: Jika layar kecil, teks narasi akan lebih lebar */
+@media screen and (max-width: 768px) {
+    .about__info-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,26 +1,22 @@
 /*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
   --font-semi: 600;
-  --font-semi-bold: 600; /* Ditambahkan agar terbaca di about__info-title */
-  --body-font: 'Montserrat', sans-serif;
-
-  /*===== Colors =====*/
-  /* HSL color mode: Purple 260 - Red 355 - Blue 224 - Pink 340 */
+  --font-semi-bold: 600; 
+  
+  /*===== Colores =====*/
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
-  --text-color: hsl(var(--hue-color), 8%, 45%); /* Ditambahkan untuk teks deskripsi */
+  --text-color: hsl(var(--hue-color), 8%, 45%); 
   
-  /*===== Typography =====*/
-  --body-font: 'Montserrat', sans-serif;
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Space Grotesk', sans-serif; /* <--- BERUBAH DI SINI */
   --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 0.938rem;
-  --smaller-font-size: 0.75rem;
+  /* ... kode lainnya ke bawah tetap sama ... */
   
   /*===== Margins =====*/
   --mb-2: 1rem;
@@ -265,12 +261,10 @@ img {
 }
 
 .about__subtitle {
-  font-family: 'Montserrat', sans-serif;
   margin-bottom: var(--mb-2);
 }
 
 .about__text {
-  font-family: 'Montserrat', sans-serif; 
   line-height: 1.5; 
 }
 

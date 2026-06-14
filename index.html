@@ -1,635 +1,984 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <title>Mohammad Fickry Pratama | Portfolio & Resume</title>
+    <meta
+      name="description"
+      content="Mohammad Fickry Pratama - IT Student and Logistics Specialist with 4+ years of experience blending operations with web development."
+    />
+    <meta
+      name="keywords"
+      content="Fickry Pratama, Mohammad Fickry Pratama, Portofolio, Resume, IT, S.Kom, Logistik, Warehouse, Web Developer, Laravel, SQL"
+    />
+    <meta name="author" content="Mohammad Fickry Pratama" />
 
-  <!-- SEO Meta Tags -->
-  <title>Mohammad Fickry Pratama | Portfolio & Resume</title>
-  <meta name="description"
-    content="Mohammad Fickry Pratama - IT Student and Logistics Specialist with 4+ years of experience blending operations with web development." />
-  <meta name="keywords"
-    content="Fickry Pratama, Mohammad Fickry Pratama, Portofolio, Resume, IT, S.Kom, Logistik, Warehouse, Web Developer, Laravel, SQL" />
-  <meta name="author" content="Mohammad Fickry Pratama" />
+    <!-- Montserrat and Inter fonts from Google Fonts -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Montserrat and Inter fonts from Google Fonts -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- ===== BOX ICONS & FontAwesome ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/img/circuit.png" />
+  </head>
 
-  <!-- ===== BOX ICONS & FontAwesome ===== -->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="icon" type="image/png" href="assets/img/circuit.png" />
-</head>
-
-<body>
-  <!--===== HEADER =====-->
-  <header class="l-header" id="header">
-    <nav class="nav bd-grid">
-      <div>
-        <a href="#" class="nav__logo" id="nav-logo-id">
-          <i class="bx bx-code-alt"></i> Fickry Pratama
-        </a>
-      </div>
-
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link" id="nav-home-id">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link" id="nav-about-id">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#experience" class="nav__link" id="nav-resume-id">Experience</a>
-          </li>
-          <li class="nav__item">
-            <a href="#skills" class="nav__link" id="nav-skills-id">Skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="#projects" class="nav__link" id="nav-projects-id">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="#certificate" class="nav__link" id="nav-certificate-id">Certificates</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link" id="nav-contact-id">Contact</a>
-          </li>
-        </ul>
-
-        <!-- Toggle Theme & Close Menu for Mobile -->
-        <div class="nav__actions">
-          <i class="bx bx-sun change-theme" id="theme-button" title="Toggle theme"></i>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo" id="nav-logo-id">
+            <i class="bx bx-code-alt"></i> Fickry Pratama
+          </a>
         </div>
-      </div>
 
-      <div class="nav__toggle" id="nav-toggle" title="Menu toggle">
-        <i class="bx bx-menu"></i>
-      </div>
-    </nav>
-  </header>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link" id="nav-home-id"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link" id="nav-about-id">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link" id="nav-resume-id"
+                >Experience</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link" id="nav-skills-id">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link" id="nav-projects-id"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#certificate" class="nav__link" id="nav-certificate-id"
+                >Certificates</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link" id="nav-contact-id"
+                >Contact</a
+              >
+            </li>
+          </ul>
 
-  <!--===== MAIN CONTENT =====-->
-  <main class="l-main">
-
-    <!--===== HOME =====-->
-    <section class="home" id="home">
-      <div class="home__container bd-grid">
-        <div class="home__data">
-          <span class="home__subtitle" id="home-subtitle-id">Welcome to my space</span>
-          <h1 class="home__title" id="home-title-id">
-            Hi, I'm <span>Mohammad Fickry Pratama</span>
-          </h1>
-
-          <!-- Typing effect wrapper -->
-          <div class="home__typed" id="home-typed-id">
-            I'm <span id="typed-text">Logistics Specialist</span><span class="home__typed-cursor">|</span>
-          </div>
-
-          <p class="home__description" id="home-desc-id">
-            A professional with over 4 years of experience in logistics and warehouse operations. Currently pursuing an
-            IT degree, bridging physical logistics optimization with backend system development.
-          </p>
-
-          <div class="home__buttons">
-            <a href="https://docs.google.com/document/d/1tFEab0o0Tp2LamWiY9RfNNhEUIm65eWs/edit?usp=sharing&ouid=107948347431988464835&rtpof=true&sd=true"
-              class="button" target="_blank" rel="noopener" id="btn-download-cv">
-              <i class="bx bx-download"></i> Download CV
-            </a>
-            <a href="#contact" class="button button--ghost" id="btn-contact-me">
-              Contact Me
-            </a>
-          </div>
-
-          <div class="home__social">
-            <a href="https://www.linkedin.com/in/fickrypratama/" target="_blank" rel="noopener"
-              class="home__social-icon" title="LinkedIn" id="social-li">
-              <i class="bx bxl-linkedin"></i>
-            </a>
-            <a href="https://github.com/fickry20" target="_blank" rel="noopener" class="home__social-icon"
-              title="GitHub" id="social-gh">
-              <i class="bx bxl-github"></i>
-            </a>
-            <a href="https://www.instagram.com/fickry.20" target="_blank" rel="noopener" class="home__social-icon"
-              title="Instagram" id="social-ig">
-              <i class="bx bxl-instagram"></i>
-            </a>
-            <a href="mailto:mohammadfickrypratama@outlook.com" class="home__social-icon" title="Email" id="social-mail">
-              <i class="bx bx-envelope"></i>
-            </a>
+          <!-- Toggle Theme & Close Menu for Mobile -->
+          <div class="nav__actions">
+            <i
+              class="bx bx-sun change-theme"
+              id="theme-button"
+              title="Toggle theme"
+            ></i>
           </div>
         </div>
 
-        <div class="home__img-wrapper">
-          <div class="home__blob-bg"></div>
-          <div class="home__img-card">
-            <img class="home__blob-img" src="assets/img/perfil.png" alt="Mohammad Fickry Pratama"
-              id="img-hero-avatar" />
-          </div>
+        <div class="nav__toggle" id="nav-toggle" title="Menu toggle">
+          <i class="bx bx-menu"></i>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!--===== ABOUT =====-->
-    <section class="about section" id="about">
-      <h2 class="section-title" id="about-title-id">About Me</h2>
+    <!--===== MAIN CONTENT =====-->
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__data">
+            <span class="home__subtitle" id="home-subtitle-id"
+              >Welcome to my space</span
+            >
+            <h1 class="home__title" id="home-title-id">
+              Hi, I'm <span>Mohammad Fickry Pratama</span>
+            </h1>
 
-      <div class="about__container bd-grid">
-        <div class="about__img-box">
-          <img src="assets/img/about.png" alt="Mohammad Fickry Pratama" id="img-about-avatar" />
-        </div>
-
-        <div class="about__data">
-          <h3 class="about__subtitle" id="about-sub-id">Blending Logistics Operations with IT Solutions</h3>
-          <p class="about__text" id="about-text-id">
-            With 4+ years of hands-on experience in supply chain, stock warehousing, and logistical operations, I
-            developed a strong mindset for problem-solving. This inspired me to pursue a degree in Information
-            Technology (S.Kom). I aim to utilize programming, automated systems, and database queries to eliminate
-            logistics bottlenecks and build clean software solutions.
-          </p>
-
-          <div class="about__info-grid">
-            <div class="about__info-item glass-card" id="about-info-degree">
-              <span class="about__info-title">Degree</span>
-              <span class="about__info-value">S.Kom (On Going)</span>
+            <!-- Typing effect wrapper -->
+            <div class="home__typed" id="home-typed-id">
+              I'm <span id="typed-text">Logistics Specialist</span
+              ><span class="home__typed-cursor">|</span>
             </div>
-            <div class="about__info-item glass-card" id="about-info-domicile">
-              <span class="about__info-title">Domicile</span>
-              <span class="about__info-value">Cileungsi, Bogor</span>
+
+            <p class="home__description" id="home-desc-id">
+              A professional with over 4 years of experience in logistics and
+              warehouse operations. Currently pursuing an IT degree, bridging
+              physical logistics optimization with backend system development.
+            </p>
+
+            <div class="home__buttons">
+              <a
+                href="https://docs.google.com/document/d/1tFEab0o0Tp2LamWiY9RfNNhEUIm65eWs/edit?usp=sharing&ouid=107948347431988464835&rtpof=true&sd=true"
+                class="button"
+                target="_blank"
+                rel="noopener"
+                id="btn-download-cv"
+              >
+                <i class="bx bx-download"></i> Download CV
+              </a>
+              <a
+                href="#contact"
+                class="button button--ghost"
+                id="btn-contact-me"
+              >
+                Contact Me
+              </a>
             </div>
-            <div class="about__info-item glass-card" id="about-info-age">
-              <span class="about__info-title">Age</span>
-              <span class="about__info-value">25 Years</span>
-            </div>
-            <div class="about__info-item glass-card" id="about-info-religion">
-              <span class="about__info-title">Religion</span>
-              <span class="about__info-value">Islam</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!--===== EXPERIENCE (TIMELINE) =====-->
-    <section class="resume section" id="experience">
-      <h2 class="section-title" id="resume-title-id">Work Experience</h2>
-
-      <div class="resume__container bd-grid">
-
-        <div class="timeline">
-          <div class="timeline__item glass-card" id="exp-item-1">
-            <span class="timeline__dot"></span>
-            <div class="timeline__header">
-              <h4 class="timeline__title">Delivery Helper (Contract)</h4>
-              <span class="timeline__date">Dec 2021 - Present</span>
-            </div>
-            <span class="timeline__company">PT Aneka Rubberindo Piranti Sejati – Bekasi, Indonesia</span>
-            <div class="timeline__description">
-              <ul>
-                <li>Responsible for the loading and unloading of goods prior to delivery to customers.</li>
-                <li>Check and match goods with delivery notes to ensure product quantity and type match.</li>
-                <li>Pack goods according to company standards before shipping to customers.</li>
-                <li>Ensure shipping processes follow company procedures to ensure accuracy and security of goods.</li>
-                <li>Collaborate with warehouse and shipping teams to ensure smooth distribution of goods.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline__item glass-card" id="exp-item-2">
-            <span class="timeline__dot"></span>
-            <div class="timeline__header">
-              <h4 class="timeline__title">Web Developer (Internship)</h4>
-              <span class="timeline__date">March 2025 - June 2025</span>
-            </div>
-            <span class="timeline__company">PT Aneka Rubberindo Piranti Sejati – Bekasi, Indonesia</span>
-            <div class="timeline__description">
-              <ul>
-                <li>Developed a web-based inventory management system using Laravel Framework.</li>
-                <li>Designed and implemented database structures for inventory tracking.</li>
-                <li>Collaborated with warehouse staff to automate stock recording and reporting processes.</li>
-                <li>Improved efficiency by reducing manual documentation and human error.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline__item glass-card" id="exp-item-3">
-            <span class="timeline__dot"></span>
-            <div class="timeline__header">
-              <h4 class="timeline__title">Warehouse (Freelance)</h4>
-              <span class="timeline__date">Dec 2019 - Dec 2020</span>
-            </div>
-            <span class="timeline__company">PT Andiarta Muzizat (Ninja Xpress) - Bekasi, Indonesia</span>
-            <div class="timeline__description">
-              <ul>
-                <li>Collect, prepare and ensure goods are ready to be shipped according to schedule.</li>
-                <li>Plan delivery routes and ensure deliveries are made on time.</li>
-                <li>Ensure the quality of goods sent meets standards and obtain a receipt after delivery.</li>
-                <li>Report delivery results and verify receipt documents.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!--===== SKILLS =====-->
-    <section class="skills section" id="skills">
-      <h2 class="section-title" id="skills-title-id">Professional Skills</h2>
-
-      <div class="skills__container bd-grid">
-        <div class="skills__list">
-          <!-- IT Skills -->
-          <div class="skills__item glass-card" data-category="it" data-skill="html" id="skill-html">
-            <i class="bx bxl-html5 skills__icon"></i>
-            <span class="skills__name">HTML5</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="css" id="skill-css">
-            <i class="bx bxl-css3 skills__icon"></i>
-            <span class="skills__name">CSS3</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="javascript" id="skill-js">
-            <i class="bx bxl-javascript skills__icon"></i>
-            <span class="skills__name">JavaScript</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="php" id="skill-php">
-            <i class="fab fa-php skills__icon"></i>
-            <span class="skills__name">PHP</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="laravel" id="skill-laravel">
-            <i class="fab fa-laravel skills__icon"></i>
-            <span class="skills__name">Laravel</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="github" id="skill-github">
-            <i class="bx bxl-github skills__icon"></i>
-            <span class="skills__name">Git & Github</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="database" id="skill-database">
-            <i class="fas fa-database skills__icon"></i>
-            <span class="skills__name">MySQL / Access</span>
-          </div>
-          <div class="skills__item glass-card" data-category="it" data-skill="api" id="skill-api">
-            <i class="fas fa-code skills__icon"></i>
-            <span class="skills__name">REST API / QA</span>
-          </div>
-
-          <!-- Logistics / Office Skills -->
-          <div class="skills__item glass-card" data-category="ops" data-skill="excel" id="skill-excel">
-            <i class="fas fa-file-excel skills__icon"></i>
-            <span class="skills__name">MS Excel (VBA)</span>
-          </div>
-          <div class="skills__item glass-card" data-category="ops" data-skill="word" id="skill-word">
-            <i class="fas fa-file-word skills__icon"></i>
-            <span class="skills__name">MS Word</span>
-          </div>
-
-          <!-- Design Skills -->
-          <div class="skills__item glass-card" data-category="design" data-skill="canva" id="skill-canva">
-            <i class="fas fa-palette skills__icon"></i>
-            <span class="skills__name">Canva Design</span>
-          </div>
-          <div class="skills__item glass-card" data-category="design" data-skill="figma" id="skill-figma">
-            <i class="fab fa-figma skills__icon"></i>
-            <span class="skills__name">Figma UI UX</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--===== PROJECTS =====-->
-    <section class="projects section" id="projects">
-      <h2 class="section-title" id="projects-title-id">Featured Projects</h2>
-
-      <div class="projects__grid bd-grid">
-
-        <div class="project__card glass-card" id="project-card-1">
-          <div class="project__header">
-            <div class="project__icon-box">
-              <i class="bx bx-package"></i>
-            </div>
-            <div class="project__links">
-              <a href="https://github.com/fickry20/inventory-app" target="_blank" rel="noopener" class="project__link"
-                title="GitHub">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/fickrypratama/"
+                target="_blank"
+                rel="noopener"
+                class="home__social-icon"
+                title="LinkedIn"
+                id="social-li"
+              >
+                <i class="bx bxl-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/fickry20"
+                target="_blank"
+                rel="noopener"
+                class="home__social-icon"
+                title="GitHub"
+                id="social-gh"
+              >
                 <i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fickry.20"
+                target="_blank"
+                rel="noopener"
+                class="home__social-icon"
+                title="Instagram"
+                id="social-ig"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+              <a
+                href="mailto:mohammadfickrypratama@outlook.com"
+                class="home__social-icon"
+                title="Email"
+                id="social-mail"
+              >
+                <i class="bx bx-envelope"></i>
               </a>
             </div>
           </div>
-          <h3 class="project__title">Smart Inventory App</h3>
-          <p class="project__description">
-            A web-based inventory tracking and stock management system designed to automate recording, minimize human
-            errors, and optimize warehouse workflow.
-          </p>
-          <div class="project__tags">
-            <span class="project__tag">Laravel</span>
-            <span class="project__tag">MySQL</span>
-            <span class="project__tag">Inventory WMS</span>
-          </div>
-        </div>
 
-        <div class="project__card glass-card" id="project-card-2">
-          <div class="project__header">
-            <div class="project__icon-box">
-              <i class="bx bx-library"></i>
-            </div>
-            <div class="project__links">
-              <a href="https://github.com/fickry20/Perpus_Digital" target="_blank" rel="noopener" class="project__link"
-                title="GitHub">
-                <i class="bx bxl-github"></i>
-              </a>
-            </div>
-          </div>
-          <h3 class="project__title">Perpus Digital (Digital Library)</h3>
-          <p class="project__description">
-            A web-based library catalog application designed to manage book metadata, borrowing transactions, and member
-            records efficiently.
-          </p>
-          <div class="project__tags">
-            <span class="project__tag">Laravel</span>
-            <span class="project__tag">MySQL</span>
-            <span class="project__tag">Library System</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!--===== CERTIFICATES =====-->
-    <section class="certificate section" id="certificate">
-      <h2 class="section-title" id="cert-title-id">Certificates & Badges</h2>
-
-      <div class="bd-grid">
-        <div class="certificates__grid" id="certificates-grid-id">
-          <!-- Cert 1 -->
-          <div class="certificate__card glass-card" data-category="security" id="cert-card-1">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_1.jpg" alt="AWS Security Best Practices" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Security & QA</span>
-              <h4 class="certificate__name">AWS Security Best Practices: Monitoring & Alerting</h4>
-            </div>
-          </div>
-
-          <!-- Cert 2 -->
-          <div class="certificate__card glass-card" data-category="cloud" id="cert-card-2">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_2.jpg" alt="Cloud Essentials AWS" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Cloud & Tech</span>
-              <h4 class="certificate__name">Cloud Essentials CA - DEX - AWS - Nasional</h4>
-            </div>
-          </div>
-
-          <!-- Cert 3 -->
-          <div class="certificate__card glass-card" data-category="security" id="cert-card-3">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_3.jpg" alt="Dasar-Dasar Keamanan AI" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Security & QA</span>
-              <h4 class="certificate__name">Dasar-Dasar Keamanan AI (Indonesian Overview)</h4>
-            </div>
-          </div>
-
-          <!-- Cert 4 -->
-          <div class="certificate__card glass-card" data-category="data" id="cert-card-4">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_4.jpg" alt="Data Science & Analytics" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Data Science</span>
-              <h4 class="certificate__name">Data Science & Analytics Credential</h4>
-            </div>
-          </div>
-
-          <!-- Cert 5 -->
-          <div class="certificate__card glass-card" data-category="security" id="cert-card-5">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_5.jpg" alt="Belajar Dasar Quality Assurance" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Security & QA</span>
-              <h4 class="certificate__name">Belajar Dasar Quality Assurance Untuk Perusahaan Tech</h4>
-            </div>
-          </div>
-
-          <!-- Cert 6 -->
-          <div class="certificate__card glass-card" data-category="data" id="cert-card-6">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_6.jpg" alt="Python Essentials 2" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Data Science</span>
-              <h4 class="certificate__name">Python Essentials 2 (Intermediate Coding)</h4>
-            </div>
-          </div>
-
-          <!-- Cert 7 -->
-          <div class="certificate__card glass-card" data-category="security" id="cert-card-7">
-            <div class="certificate__img-box">
-              <img src="assets/img/Sertificate_7.jpg" alt="Introduction to Cyber Security" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Security & QA</span>
-              <h4 class="certificate__name">Introduction to Cyber Security & Career Awareness</h4>
-            </div>
-          </div>
-
-          <!-- Cert 8 -->
-          <div class="certificate__card glass-card" data-category="data" id="cert-card-8">
-            <div class="certificate__img-box">
-              <img src="assets/img/sertificate_8.png" alt="Associate Data Scientist Python" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Data Science</span>
-              <h4 class="certificate__name">Associate Data Scientist + Python - Kominfo Academy</h4>
-            </div>
-          </div>
-
-          <!-- Cert 9 -->
-          <div class="certificate__card glass-card" data-category="cloud" id="cert-card-9">
-            <div class="certificate__img-box">
-              <img src="assets/img/sertificate_9.jpg" alt="Associate Network Administrator" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Cloud & Tech</span>
-              <h4 class="certificate__name">Intermediate Associate Network Administrator</h4>
-            </div>
-          </div>
-
-          <!-- Cert 10
-          <div class="certificate__card glass-card" data-category="cloud" id="cert-card-10">
-            <div class="certificate__img-box">
-              <img src="assets/img/sertificate_10.jpg" alt="Database Foundation" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Cloud & Tech</span>
-              <h4 class="certificate__name">Database Foundation - Oracle / SQL Essentials</h4>
-            </div>
-          </div> -->
-
-          <!-- Cert 11 -->
-          <div class="certificate__card glass-card" data-category="ai" id="cert-card-11">
-            <div class="certificate__img-box">
-              <img src="assets/img/sertificate_11.png" alt="Overview of AI (Indonesian)" />
-              <div class="certificate__overlay">
-                <span class="certificate__zoom-icon"><i class="bx bx-search-alt"></i></span>
-              </div>
-            </div>
-            <div class="certificate__info">
-              <span class="certificate__tag">Artificial Intelligence</span>
-              <h4 class="certificate__name">Overview of AI (Indonesian) - Huawei ICT Academy</h4>
+          <div class="home__img-wrapper">
+            <div class="home__blob-bg"></div>
+            <div class="home__img-card">
+              <img
+                class="home__blob-img"
+                src="assets/img/perfil.png"
+                alt="Mohammad Fickry Pratama"
+                id="img-hero-avatar"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section class="contact section" id="contact">
-      <h2 class="section-title" id="contact-title-id">Get In Touch</h2>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title" id="about-title-id">About Me</h2>
 
-      <div class="contact__container bd-grid">
-
-        <div class="contact__info-box">
-          <div class="contact__card glass-card" id="contact-card-email">
-            <div class="contact__icon">
-              <i class="bx bx-envelope"></i>
-            </div>
-            <div>
-              <span class="contact__title">Email Me</span>
-              <h4 class="contact__value">mohammadfickrypratama@outlook.com</h4>
-            </div>
+        <div class="about__container bd-grid">
+          <div class="about__img-box">
+            <img
+              src="assets/img/about.png"
+              alt="Mohammad Fickry Pratama"
+              id="img-about-avatar"
+            />
           </div>
 
-          <div class="contact__card glass-card" id="contact-card-phone">
-            <div class="contact__icon">
-              <i class="bx bx-phone"></i>
-            </div>
-            <div>
-              <span class="contact__title">Call Me</span>
-              <h4 class="contact__value">+62 821-2220-5599</h4>
-            </div>
-          </div>
+          <div class="about__data">
+            <h3 class="about__subtitle" id="about-sub-id">
+              Blending Logistics Operations with IT Solutions
+            </h3>
+            <p class="about__text" id="about-text-id">
+              With 4+ years of hands-on experience in supply chain, stock
+              warehousing, and logistical operations, I developed a strong
+              mindset for problem-solving. This inspired me to pursue a degree
+              in Information Technology (S.Kom). I aim to utilize programming,
+              automated systems, and database queries to eliminate logistics
+              bottlenecks and build clean software solutions.
+            </p>
 
-          <div class="contact__card glass-card" id="contact-card-location">
-            <div class="contact__icon">
-              <i class="bx bx-map"></i>
-            </div>
-            <div>
-              <span class="contact__title">Location</span>
-              <h4 class="contact__value">Cileungsi, Bogor, Indonesia</h4>
+            <div class="about__info-grid">
+              <div class="about__info-item glass-card" id="about-info-degree">
+                <span class="about__info-title">Degree</span>
+                <span class="about__info-value">S.Kom (On Going)</span>
+              </div>
+              <div class="about__info-item glass-card" id="about-info-domicile">
+                <span class="about__info-title">Domicile</span>
+                <span class="about__info-value">Cileungsi, Bogor</span>
+              </div>
+              <div class="about__info-item glass-card" id="about-info-age">
+                <span class="about__info-title">Age</span>
+                <span class="about__info-value">25 Years</span>
+              </div>
+              <div class="about__info-item glass-card" id="about-info-religion">
+                <span class="about__info-title">Religion</span>
+                <span class="about__info-value">Islam</span>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="contact__form-box glass-card" id="contact-form-card">
-          <!-- Contact form with EmailJS hook points -->
-          <form id="contact-form" class="contact__form">
-            <div class="contact__inputs-group">
+      <!--===== EXPERIENCE (TIMELINE) =====-->
+      <section class="resume section" id="experience">
+        <h2 class="section-title" id="resume-title-id">Work Experience</h2>
+
+        <div class="resume__container bd-grid">
+          <div class="timeline">
+            <div class="timeline__item glass-card" id="exp-item-1">
+              <span class="timeline__dot"></span>
+              <div class="timeline__header">
+                <h4 class="timeline__title">Delivery Helper (Contract)</h4>
+                <span class="timeline__date">Dec 2021 - Present</span>
+              </div>
+              <span class="timeline__company"
+                >PT Aneka Rubberindo Piranti Sejati – Bekasi, Indonesia</span
+              >
+              <div class="timeline__description">
+                <ul>
+                  <li>
+                    Responsible for the loading and unloading of goods prior to
+                    delivery to customers.
+                  </li>
+                  <li>
+                    Check and match goods with delivery notes to ensure product
+                    quantity and type match.
+                  </li>
+                  <li>
+                    Pack goods according to company standards before shipping to
+                    customers.
+                  </li>
+                  <li>
+                    Ensure shipping processes follow company procedures to
+                    ensure accuracy and security of goods.
+                  </li>
+                  <li>
+                    Collaborate with warehouse and shipping teams to ensure
+                    smooth distribution of goods.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item glass-card" id="exp-item-2">
+              <span class="timeline__dot"></span>
+              <div class="timeline__header">
+                <h4 class="timeline__title">Web Developer (Internship)</h4>
+                <span class="timeline__date">March 2025 - June 2025</span>
+              </div>
+              <span class="timeline__company"
+                >PT Aneka Rubberindo Piranti Sejati – Bekasi, Indonesia</span
+              >
+              <div class="timeline__description">
+                <ul>
+                  <li>
+                    Developed a web-based inventory management system using
+                    Laravel Framework.
+                  </li>
+                  <li>
+                    Designed and implemented database structures for inventory
+                    tracking.
+                  </li>
+                  <li>
+                    Collaborated with warehouse staff to automate stock
+                    recording and reporting processes.
+                  </li>
+                  <li>
+                    Improved efficiency by reducing manual documentation and
+                    human error.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline__item glass-card" id="exp-item-3">
+              <span class="timeline__dot"></span>
+              <div class="timeline__header">
+                <h4 class="timeline__title">Warehouse (Freelance)</h4>
+                <span class="timeline__date">Dec 2019 - Dec 2020</span>
+              </div>
+              <span class="timeline__company"
+                >PT Andiarta Muzizat (Ninja Xpress) - Bekasi, Indonesia</span
+              >
+              <div class="timeline__description">
+                <ul>
+                  <li>
+                    Collect, prepare and ensure goods are ready to be shipped
+                    according to schedule.
+                  </li>
+                  <li>
+                    Plan delivery routes and ensure deliveries are made on time.
+                  </li>
+                  <li>
+                    Ensure the quality of goods sent meets standards and obtain
+                    a receipt after delivery.
+                  </li>
+                  <li>Report delivery results and verify receipt documents.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title" id="skills-title-id">Professional Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills__list">
+            <!-- IT Skills -->
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="html"
+              id="skill-html"
+            >
+              <i class="bx bxl-html5 skills__icon"></i>
+              <span class="skills__name">HTML5</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="css"
+              id="skill-css"
+            >
+              <i class="bx bxl-css3 skills__icon"></i>
+              <span class="skills__name">CSS3</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="javascript"
+              id="skill-js"
+            >
+              <i class="bx bxl-javascript skills__icon"></i>
+              <span class="skills__name">JavaScript</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="php"
+              id="skill-php"
+            >
+              <i class="fab fa-php skills__icon"></i>
+              <span class="skills__name">PHP</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="laravel"
+              id="skill-laravel"
+            >
+              <i class="fab fa-laravel skills__icon"></i>
+              <span class="skills__name">Laravel</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="github"
+              id="skill-github"
+            >
+              <i class="bx bxl-github skills__icon"></i>
+              <span class="skills__name">Git & Github</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="database"
+              id="skill-database"
+            >
+              <i class="fas fa-database skills__icon"></i>
+              <span class="skills__name">MySQL / Access</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="it"
+              data-skill="api"
+              id="skill-api"
+            >
+              <i class="fas fa-code skills__icon"></i>
+              <span class="skills__name">REST API / QA</span>
+            </div>
+
+            <!-- Logistics / Office Skills -->
+            <div
+              class="skills__item glass-card"
+              data-category="ops"
+              data-skill="excel"
+              id="skill-excel"
+            >
+              <i class="fas fa-file-excel skills__icon"></i>
+              <span class="skills__name">MS Excel (VBA)</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="ops"
+              data-skill="word"
+              id="skill-word"
+            >
+              <i class="fas fa-file-word skills__icon"></i>
+              <span class="skills__name">MS Word</span>
+            </div>
+
+            <!-- Design Skills -->
+            <div
+              class="skills__item glass-card"
+              data-category="design"
+              data-skill="canva"
+              id="skill-canva"
+            >
+              <i class="fas fa-palette skills__icon"></i>
+              <span class="skills__name">Canva Design</span>
+            </div>
+            <div
+              class="skills__item glass-card"
+              data-category="design"
+              data-skill="figma"
+              id="skill-figma"
+            >
+              <i class="fab fa-figma skills__icon"></i>
+              <span class="skills__name">Figma UI UX</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== PROJECTS =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title" id="projects-title-id">Featured Projects</h2>
+
+        <div class="projects__grid bd-grid">
+          <div class="project__card glass-card" id="project-card-1">
+            <div class="project__header">
+              <div class="project__icon-box">
+                <i class="bx bx-package"></i>
+              </div>
+              <div class="project__links">
+                <a
+                  href="https://github.com/fickry20/inventory-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="project__link"
+                  title="GitHub"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project__title">Smart Inventory App</h3>
+            <p class="project__description">
+              A web-based inventory tracking and stock management system
+              designed to automate recording, minimize human errors, and
+              optimize warehouse workflow.
+            </p>
+            <div class="project__tags">
+              <span class="project__tag">Laravel</span>
+              <span class="project__tag">MySQL</span>
+              <span class="project__tag">Inventory WMS</span>
+            </div>
+          </div>
+
+          <div class="project__card glass-card" id="project-card-2">
+            <div class="project__header">
+              <div class="project__icon-box">
+                <i class="bx bx-library"></i>
+              </div>
+              <div class="project__links">
+                <a
+                  href="https://github.com/fickry20/Perpus_Digital"
+                  target="_blank"
+                  rel="noopener"
+                  class="project__link"
+                  title="GitHub"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+            </div>
+            <h3 class="project__title">Perpus Digital (Digital Library)</h3>
+            <p class="project__description">
+              A web-based library catalog application designed to manage book
+              metadata, borrowing transactions, and member records efficiently.
+            </p>
+            <div class="project__tags">
+              <span class="project__tag">Laravel</span>
+              <span class="project__tag">MySQL</span>
+              <span class="project__tag">Library System</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CERTIFICATES =====-->
+      <section class="certificate section" id="certificate">
+        <h2 class="section-title" id="cert-title-id">Certificates & Badges</h2>
+
+        <div class="bd-grid">
+          <div class="certificates__grid" id="certificates-grid-id">
+            <!-- Cert 1 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="security"
+              id="cert-card-1"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_1.jpg"
+                  alt="AWS Security Best Practices"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Security & QA</span>
+                <h4 class="certificate__name">
+                  AWS Security Best Practices: Monitoring & Alerting
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="cloud"
+              id="cert-card-2"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_2.jpg"
+                  alt="Cloud Essentials AWS"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Cloud & Tech</span>
+                <h4 class="certificate__name">
+                  Cloud Essentials CA - DEX - AWS - Nasional
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="security"
+              id="cert-card-3"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_3.jpg"
+                  alt="Dasar-Dasar Keamanan AI"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Security & QA</span>
+                <h4 class="certificate__name">
+                  Dasar-Dasar Keamanan AI (Indonesian Overview)
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 4 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="data"
+              id="cert-card-4"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_4.jpg"
+                  alt="Data Science & Analytics"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Data Science</span>
+                <h4 class="certificate__name">
+                  Data Science & Analytics Credential
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 5 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="security"
+              id="cert-card-5"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_5.jpg"
+                  alt="Belajar Dasar Quality Assurance"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Security & QA</span>
+                <h4 class="certificate__name">
+                  Belajar Dasar Quality Assurance Untuk Perusahaan Tech
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 6 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="data"
+              id="cert-card-6"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_6.jpg"
+                  alt="Python Essentials 2"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Data Science</span>
+                <h4 class="certificate__name">
+                  Python Essentials 2 (Intermediate Coding)
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 7 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="security"
+              id="cert-card-7"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/Sertificate_7.jpg"
+                  alt="Introduction to Cyber Security"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Security & QA</span>
+                <h4 class="certificate__name">
+                  Introduction to Cyber Security & Career Awareness
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 8 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="data"
+              id="cert-card-8"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/sertificate_8.png"
+                  alt="Associate Data Scientist Python"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Data Science</span>
+                <h4 class="certificate__name">
+                  Associate Data Scientist + Python - Kominfo Academy
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 9 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="cloud"
+              id="cert-card-9"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/sertificate_9.jpg"
+                  alt="Associate Network Administrator"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Cloud & Tech</span>
+                <h4 class="certificate__name">
+                  Intermediate Associate Network Administrator
+                </h4>
+              </div>
+            </div>
+
+            <!-- Cert 10 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="cloud"
+              id="cert-card-10"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/sertificate_10.jpg"
+                  alt="Database Foundation"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Cloud & Tech</span>
+                <h4 class="certificate__name">
+                  Database Foundation - Oracle / SQL Essentials
+                </h4>
+              </div>
+            </div>
+            -->
+
+            <!-- Cert 11 -->
+            <div
+              class="certificate__card glass-card"
+              data-category="ai"
+              id="cert-card-11"
+            >
+              <div class="certificate__img-box">
+                <img
+                  src="assets/img/sertificate_11.png"
+                  alt="Overview of AI (Indonesian)"
+                />
+                <div class="certificate__overlay">
+                  <span class="certificate__zoom-icon"
+                    ><i class="bx bx-search-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="certificate__info">
+                <span class="certificate__tag">Artificial Intelligence</span>
+                <h4 class="certificate__name">
+                  Overview of AI (Indonesian) - Huawei ICT Academy
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact section" id="contact">
+        <h2 class="section-title" id="contact-title-id">Get In Touch</h2>
+
+        <div class="contact__container bd-grid">
+          <div class="contact__info-box">
+            <div class="contact__card glass-card" id="contact-card-email">
+              <div class="contact__icon">
+                <i class="bx bx-envelope"></i>
+              </div>
+              <div>
+                <span class="contact__title">Email Me</span>
+                <h4 class="contact__value">
+                  mohammadfickrypratama@outlook.com
+                </h4>
+              </div>
+            </div>
+
+            <div class="contact__card glass-card" id="contact-card-phone">
+              <div class="contact__icon">
+                <i class="bx bx-phone"></i>
+              </div>
+              <div>
+                <span class="contact__title">Call Me</span>
+                <h4 class="contact__value">+62 821-2220-5599</h4>
+              </div>
+            </div>
+
+            <div class="contact__card glass-card" id="contact-card-location">
+              <div class="contact__icon">
+                <i class="bx bx-map"></i>
+              </div>
+              <div>
+                <span class="contact__title">Location</span>
+                <h4 class="contact__value">Cileungsi, Bogor, Indonesia</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__form-box glass-card" id="contact-form-card">
+            <!-- Contact form with EmailJS hook points -->
+            <form id="contact-form" class="contact__form">
+              <div class="contact__inputs-group">
+                <div class="contact__form-div">
+                  <input
+                    type="text"
+                    name="name"
+                    class="contact__form-input"
+                    placeholder=" "
+                    required
+                    id="input-name"
+                  />
+                  <label class="contact__form-label">Name</label>
+                </div>
+                <div class="contact__form-div">
+                  <input
+                    type="email"
+                    name="email"
+                    class="contact__form-input"
+                    placeholder=" "
+                    required
+                    id="input-email"
+                  />
+                  <label class="contact__form-label">Email</label>
+                </div>
+              </div>
+
               <div class="contact__form-div">
-                <input type="text" name="name" class="contact__form-input" placeholder=" " required id="input-name" />
-                <label class="contact__form-label">Name</label>
+                <input
+                  type="text"
+                  name="subject"
+                  class="contact__form-input"
+                  placeholder=" "
+                  required
+                  id="input-subject"
+                />
+                <label class="contact__form-label">Subject</label>
               </div>
+
               <div class="contact__form-div">
-                <input type="email" name="email" class="contact__form-input" placeholder=" " required
-                  id="input-email" />
-                <label class="contact__form-label">Email</label>
+                <textarea
+                  name="message"
+                  class="contact__form-input contact__form-area"
+                  placeholder=" "
+                  required
+                  id="input-message"
+                ></textarea>
+                <label class="contact__form-label">Message</label>
               </div>
-            </div>
 
-            <div class="contact__form-div">
-              <input type="text" name="subject" class="contact__form-input" placeholder=" " required
-                id="input-subject" />
-              <label class="contact__form-label">Subject</label>
-            </div>
+              <button type="submit" class="button" id="btn-submit">
+                <i class="bx bx-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
 
-            <div class="contact__form-div">
-              <textarea name="message" class="contact__form-input contact__form-area" placeholder=" " required
-                id="input-message"></textarea>
-              <label class="contact__form-label">Message</label>
-            </div>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="footer__container bd-grid">
+        <h2 class="footer__title">Fickry Pratama</h2>
 
-            <button type="submit" class="button" id="btn-submit">
-              <i class="bx bx-paper-plane"></i> Send Message
-            </button>
-          </form>
+        <div class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/fickrypratama/"
+            target="_blank"
+            rel="noopener"
+            class="footer__social-link"
+            title="LinkedIn"
+            id="footer-li"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/fickry20"
+            target="_blank"
+            rel="noopener"
+            class="footer__social-link"
+            title="GitHub"
+            id="footer-gh"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/fickry.20"
+            target="_blank"
+            rel="noopener"
+            class="footer__social-link"
+            title="Instagram"
+            id="footer-ig"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
         </div>
 
+        <p class="footer__copy">
+          &#169; Mohammad Fickry Pratama. All rights reserved 2026
+        </p>
       </div>
-    </section>
+    </footer>
 
-  </main>
-
-  <!--===== FOOTER =====-->
-  <footer class="footer">
-    <div class="footer__container bd-grid">
-      <h2 class="footer__title">Fickry Pratama</h2>
-
-      <div class="footer__social">
-        <a href="https://www.linkedin.com/in/fickrypratama/" target="_blank" rel="noopener" class="footer__social-link"
-          title="LinkedIn" id="footer-li">
-          <i class="bx bxl-linkedin"></i>
-        </a>
-        <a href="https://github.com/fickry20" target="_blank" rel="noopener" class="footer__social-link" title="GitHub"
-          id="footer-gh">
-          <i class="bx bxl-github"></i>
-        </a>
-        <a href="https://www.instagram.com/fickry.20" target="_blank" rel="noopener" class="footer__social-link"
-          title="Instagram" id="footer-ig">
-          <i class="bx bxl-instagram"></i>
-        </a>
+    <!-- Lightbox Zoom Modal -->
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox__content">
+        <i class="bx bx-x lightbox__close" id="lightbox-close"></i>
+        <img
+          src=""
+          alt="Certificate zoom view"
+          class="lightbox__img"
+          id="lightbox-img"
+        />
+        <h3 class="lightbox__caption" id="lightbox-caption">
+          Certificate Name
+        </h3>
       </div>
-
-      <p class="footer__copy">&#169; Mohammad Fickry Pratama. All rights reserved 2026</p>
     </div>
-  </footer>
 
-  <!-- Lightbox Zoom Modal -->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox__content">
-      <i class="bx bx-x lightbox__close" id="lightbox-close"></i>
-      <img src="" alt="Certificate zoom view" class="lightbox__img" id="lightbox-img" />
-      <h3 class="lightbox__caption" id="lightbox-caption">Certificate Name</h3>
-    </div>
-  </div>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!--===== SCROLL REVEAL =====-->
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-  <!-- ===== MAIN JS ===== -->
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <!-- ===== MAIN JS ===== -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

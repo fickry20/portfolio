@@ -961,6 +961,28 @@ button, input, textarea {
   padding: 1.5rem;
 }
 
+.project__img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: var(--mb-3);
+  border: 1px solid var(--border-color);
+}
+
+.project__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.project__card:hover .project__img {
+  transform: scale(1.05);
+}
+
 .project__header {
   display: flex;
   justify-content: space-between;
@@ -1035,15 +1057,15 @@ button, input, textarea {
 
 /*===== CONTACT =====*/
 .contact__container {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .contact__info-box {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  width: 100%;
 }
 
 .contact__card {
@@ -1290,9 +1312,9 @@ button, input, textarea {
   }
 
 
-  .contact__container {
+  .contact__info-box {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 }
 

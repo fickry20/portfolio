@@ -13,3 +13,11 @@ Selamat datang di repository website portofolio pribadi saya! Website ini diranc
 - **Form Kontak:** Memudahkan pengunjung atau klien untuk menghubungi saya secara langsung.
 
 ---
+
+## Struktur Halaman
+
+- `index.html` — Beranda
+- `about.html` — Profil, pengalaman kerja, dan keahlian
+- `projects.html` — Proyek
+- `certificates.html` — Sertifikat dan badges
+- `contact.html` — Informasi kontak

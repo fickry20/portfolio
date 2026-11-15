@@ -6,8 +6,16 @@ const navMenu = document.getElementById('nav-menu'),
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
 if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
+    const toggleMenu = () => {
         navMenu.classList.toggle('show-menu')
+    }
+
+    navToggle.addEventListener('click', toggleMenu)
+    navToggle.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            toggleMenu()
+        }
     })
 }
 
@@ -18,29 +26,6 @@ function linkAction() {
     }
 }
 navLinks.forEach(n => n.addEventListener('click', linkAction))
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive() {
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 58
-        const sectionId = current.getAttribute('id')
-        const navLinkElement = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
-
-        if (navLinkElement) {
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                navLinkElement.classList.add('active-link')
-            } else {
-                navLinkElement.classList.remove('active-link')
-            }
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
 
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById('theme-button')
@@ -69,7 +54,7 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 if (themeButton) {
-    themeButton.addEventListener('click', () => {
+    const toggleTheme = () => {
         // Add or remove the light / icon theme
         document.body.classList.toggle(lightTheme)
         themeButton.classList.toggle(iconTheme)
@@ -77,6 +62,14 @@ if (themeButton) {
         // We save the theme and the current icon that the user chose
         localStorage.setItem('selected-theme', getCurrentTheme())
         localStorage.setItem('selected-icon', getCurrentIcon())
+    }
+
+    themeButton.addEventListener('click', toggleTheme)
+    themeButton.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault()
+            toggleTheme()
+        }
     })
 }
 
@@ -160,16 +153,18 @@ document.addEventListener('keydown', (e) => {
 });
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 1800,
-    delay: 150,
-    reset: false
-});
+if (typeof ScrollReveal === 'function') {
+    const sr = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        duration: 1800,
+        delay: 150,
+        reset: false
+    });
 
-sr.reveal('.home__data, .about__img-box, .section-title, .contact__info-box', {});
-sr.reveal('.home__img-wrapper, .about__data, .contact__form-box', { delay: 300 });
-sr.reveal('.timeline', { delay: 200, interval: 100 });
-sr.reveal('.skills__categories, .certificates__filters', { delay: 100 });
-sr.reveal('.skills__item, .project__card, .certificate__card', { interval: 80 });
+    sr.reveal('.home__data, .about__img-box, .section-title, .contact__info-box', {});
+    sr.reveal('.home__img-wrapper, .about__data, .contact__form-box', { delay: 300 });
+    sr.reveal('.timeline', { delay: 200, interval: 100 });
+    sr.reveal('.skills__categories, .certificates__filters', { delay: 100 });
+    sr.reveal('.skills__item, .project__card, .certificate__card', { interval: 80 });
+}

@@ -1,0 +1,7 @@
+{
+  "name": "fickry-portfolio",
+  "private": true,
+  "engines": {
+    "node": "26.x"
+  }
+}

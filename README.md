@@ -21,3 +21,7 @@ Selamat datang di repository website portofolio pribadi saya! Website ini diranc
 - `projects.html` — Proyek
 - `certificates.html` — Sertifikat dan badges
 - `contact.html` — Informasi kontak
+
+## Deployment
+
+Versi Node.js untuk build Vercel ditetapkan ke `26.x` melalui `package.json`.
